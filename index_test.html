@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Тест на кибербезопасность</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="quiz">
+        <form action="#!" class="quiz__form">
+          <fieldset class="quiz__fieldset">
+            <legend class="quiz__legend">
+              <div class="quiz__question">
+                <p id="question-text"></p>
+              </div>
+            </legend>
+            <div class="quiz__progress">
+              <div class="quiz__progress-line">
+                <div id="progress-fill" class="quiz__progress-fill"></div>
+              </div>
+            </div>
+            <div class="quiz__answer" id="answers-container">
+              ->
+            </div>
+          </fieldset>
+          <button type="button" class="quiz__button" onclick="nextStep()">
+            Далее
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

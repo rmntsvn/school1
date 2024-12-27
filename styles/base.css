@@ -1,0 +1,117 @@
+
+@font-face{
+  font-family: 'DaysOne';
+  src: url(../fonts/DaysOne-Regular.ttf);
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Montserrat';
+  font-size: 10px;
+  line-height: 1.5;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+
+}
+
+header {
+  flex: 0 0 auto;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container--row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+body.noscroll {
+  overflow: hidden;
+}
+
+.hide {
+  display: none;
+}
+
+pre {
+  font-size: 1rem;
+  font-family: 'DaysOne';
+  font-weight: normal;
+}
+@media (max-width: 1200px) {
+  .container{
+      width: 992px;
+  }
+  
+}
+@media (max-width: 420px) {
+  .container{
+      width: 320px;
+  }
+  body{
+    font-size: 8px;
+  }
+  .quiz__answer-item-circle{
+    margin-right: 3px!important; 
+    
+
+  }
+  .quiz__answer-item-circle::after{
+    margin: 0!important ; 
+  }
+  .quiz__answer-item {
+    padding: 5px!important;
+  }
+  .quiz__button{
+    width: 200px !important;
+  }
+}
